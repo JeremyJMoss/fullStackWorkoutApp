@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { energyMeasurementChange, nameChange, servingSizeChange, unitOfMeasurementChange, energyChange, proteinChange, totalFatChange, saturatedFatChange, carbohydratesChange, sugarsChange, sodiumChange, createMeal, resetFetchStatus, resetErrorMessage, resetFields } from "../../config/reducers/adminReducer";
 import RadioForm from "react-native-simple-radio-button";
-import CreateMealModal from "../Modals/CreateMealModal";
-import HeaderButton from "../UIElements/HeaderButton";
+import CreateMealModal from "../Modals/CreateMealModal/CreateMealModal";
+import HeaderButton from "../UIElements/HeaderButton.js";
 
 const CreateMealScreen = ({navigation}) => {
     const dispatch = useDispatch();
